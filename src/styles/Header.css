@@ -1,0 +1,114 @@
+/* تصميم الهيدر */
+.header {
+    background: #fff;
+    background-color: #ffffff;
+    color: #333333;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 0 8px;
+  }
+  
+  /* تصميم الشريط */
+  .toolbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  /* تصميم الشعار */
+  .logo {
+    font-weight: bold;
+    color: #ff385c;
+    cursor: pointer;
+  }
+  
+  /* شريط البحث */
+  .search-bar {
+    display: flex;
+    align-items: center;
+    background-color: #f7f7f7;
+    border-radius: 50px;
+    padding: 4px 8px;
+    max-width: 500px;
+    flex: 1;
+  }
+  
+  .search-input {
+    flex: 1;
+    border: none;
+    outline: none;
+    
+  }
+  
+  .search-button {
+    color: #ff385c;
+  }
+  
+  /* أيقونات الحساب */
+  .header-icons {
+    display: flex;
+    align-items: center;
+    border: 1px solid rgba(209, 192, 192,0.7);
+    border-radius: 25px;
+    box-sizing: border-box;
+    padding: 5px 12px 5px 8px;
+    gap: 8px;
+    margin: 5px;
+  }
+  
+  .icon {
+    color: rgb(97, 90, 90);
+    /* transition: color 0.3s; */
+  }
+  
+  .header-icons:hover {
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
+
+  }
+  .dis{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .b{
+    text-transform: none;
+    border: none;
+    background-color: #fff;
+    font-size: 16px;
+    padding: 10px    ;
+  
+  }
+  .b:hover{
+    border-radius: 25px;
+    box-sizing: border-box;
+    background-color:rgba(146, 139, 139, 0.1) ;
+  }
+  .ic{
+    text-transform: none;
+    border: none;
+    background-color: #fff;
+    font-size: 16px;
+    padding: 12px    ;
+     }
+  .ic:hover{
+    border-radius: 50%;
+    background-color:rgba(146, 139, 139, 0.1) ;
+  }
+  .diss{
+    display: flex;
+    align-items: center;
+  }
+  .bb{
+    text-transform: none;
+    border: none;
+    background-color: #fff;
+    display: block;
+    font-size: 20px;
+    color: gray;
+    padding: 10px 16px;
+  }
+  .bb:hover{
+    color:  rgb(12, 12, 12);
+  }
+  .bb:focus{
+    color:  rgb(12, 12, 12);
+  }
