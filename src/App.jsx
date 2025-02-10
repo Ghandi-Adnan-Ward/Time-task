@@ -3,7 +3,7 @@ import { BrowserRouter as Router } from "react-router-dom";
 import Header from "./components/Header";
 import Filters from "./components/Filters";
 import ContentGrid from "./components/ContentGrid";
-import TimeConverter from "../TimeConverter";
+import TimeConverter from "./TimeConverter";
 import './App.css'
 function App() {
   
