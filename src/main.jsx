@@ -4,8 +4,12 @@ import './index.css'
 import App from './App.jsx'
 
 import 'bootstrap/dist/css/bootstrap.min.css';
+import { BrowserRouter as Router,   } from "react-router-dom";
 createRoot(document.getElementById('root')).render(
   <StrictMode>
+    <Router basename='/timer'>
     <App />
+
+    </Router>
   </StrictMode>,
 )
