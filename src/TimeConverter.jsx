@@ -133,6 +133,7 @@ const TimeConverter = () => {
   const [error, setError] = useState("");
   const [currentTime, setCurrentTime] = useState(moment());
   const [countdown, setCountdown] = useState(null);
+  const now = moment();
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -169,12 +170,11 @@ const TimeConverter = () => {
       setError("");
       
       // بدء العد التنازلي
-      const now = moment();
       const targetTime = moment(inputTime, "HH:mm");
       let duration = moment.duration(targetTime.diff(now));
 
       if (duration.asMilliseconds() > 0) {
-        setCountdown(moment.utc(duration.asMilliseconds()).format("HH:mm:ss"));
+        setCountdown(moment.utc().format("HH:mm:ss"));
         startCountdown(duration);
       } else {
         setCountdown("00:00:00");
